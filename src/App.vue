@@ -1,7 +1,12 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link :to="{ name: 'Evenement' }">Evenement</router-link> |
+    <router-link :to="{ name: 'Membre' }">Membre</router-link> |
+    <router-link :to="{ name: 'Lieu' }">Lieu</router-link> |
+    <router-link :to="{ name: 'Gestion' }">Gestion Membres</router-link> |
+    <router-link :to="{ name: 'Login' }">Connexion</router-link> |
+    <router-link :to="{ name: 'Deconnexion' }">Deconnexion</router-link>
   </nav>
   <router-view/>
 </template>
